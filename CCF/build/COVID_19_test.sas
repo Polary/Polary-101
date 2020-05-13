@@ -8,12 +8,12 @@ You need to evaluate each parameter for your population of interest.
 */
 
 /* directory path for files: COVID_19.sas (this file), libname store */
-    %let homedir = /Local_Files/covid-19-sas/ccf;
+   C:\Users\11612\Desktop\数学建模;
 
 /* the storage location for the MODEL_FINAL table and other output tables - when &ScenarioSource=BATCH */
     libname store "&homedir.";
 
-/* Depending on which SAS products you have and which releases you have these options will turn components of this code on/off */
+/* Depending on which SAS products you have and which releases you have these options will turn components of this code on/off */NO
     %LET HAVE_SASETS = YES; /* YES implies you have SAS/ETS software, this enable the PROC MODEL methods in this code.  Without this the Data Step SIR model still runs */
     %LET HAVE_V151 = NO; /* YES implies you have products verison 15.1 (latest) and switches PROC MODEL to PROC TMODEL for faster execution */
 
